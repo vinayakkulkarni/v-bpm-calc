@@ -78,6 +78,10 @@ export default {
   box-sizing: border-box;
 }
 
+.bpm span {
+  user-select: none !important;
+}
+
 #app {
   min-height: 100vh;
   height: 100vh;
