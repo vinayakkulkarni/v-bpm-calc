@@ -1,5 +1,5 @@
 <template>
-  <div id="app" @click="init" @keypress="init">
+  <div id="app" @click="init">
     <a href="https://github.com/vinayakkulkarni/v-bpm-calc" target="_blank" class="github-corner">
       <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true" style="fill: rgb(21, 21, 19); color: rgb(255, 255, 255); position: absolute; top: 0px; right: 0px; border: 0px; z-index: 999;">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -18,7 +18,11 @@
 export default {
   name: 'app',
   mounted() {
-    this.init();
+    const t = this;
+    t.init();
+    window.addEventListener("keypress", e => {
+      if (e.keyCode) { t.init(); };
+    });
   },
   data() {
     return {
