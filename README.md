@@ -1,4 +1,4 @@
-# Metronome Timer • [Demo](https://vinayak.website/v-bpm-calc)
+# Metronome Timer • [Demo](https://vinayak.site/v-bpm-calc)
 
 > Simple Metronome BPM Calc made with ❤️ and Vue.js
 
