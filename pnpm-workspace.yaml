@@ -1,0 +1,60 @@
+# pnpm 11+ reads only auth/registry keys from .npmrc; every other setting
+# lives here in camelCase.
+
+# Every version below was checked against the npm registry on 2026-10-23.
+catalog:
+  # App runtime
+  nuxt: ^4.6.2
+  vue: ^3.5.44
+  '@nuxtjs/color-mode': ^4.0.1
+  # Styling
+  tailwindcss: ^4.3.3
+  '@tailwindcss/vite': ^4.3.3
+  # Cloudflare Workers
+  wrangler: ^4.152.0
+  # Tooling
+  oxlint: ^1.89.0
+  oxfmt: ^0.74.0
+  vite-plus: ^1.4.0
+  # Classic TypeScript 6: vue-tsc patches the JS compiler, which the native
+  # TypeScript 7 does not ship. Move to 7.x when vue-tsc supports it.
+  typescript: ^6.0.3
+  vue-tsc: ^3.3.13
+  '@types/node': ^26.6.5
+  # Git hooks
+  husky: ^9.1.7
+  lint-staged: ^17.6.0
+  '@commitlint/cli': ^21.2.4
+  '@commitlint/config-conventional': ^21.2.4
+
+# Nuxt 4.5+ runs on unhead v3. Keep one copy on the release that fixed the
+# Cloudflare preset build break (nuxt/nuxt#35670).
+overrides:
+  unhead: '>=3.4.3'
+
+minimumReleaseAge: 60
+minimumReleaseAgeExclude:
+  - '@nuxt/*'
+  - nuxt
+  - '@vue/*'
+  - vue
+  - wrangler
+  - workerd
+  - miniflare
+  - '@cloudflare/*'
+  - '@oxlint/*'
+  - '@oxfmt/*'
+  - oxlint
+  - oxfmt
+  - '@commitlint/*'
+  - '@types/*'
+  - vite-plus
+  - '@voidzero-dev/*'
+
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: true
+  sharp: false
+  unrs-resolver: true
+  vue-demi: false
+  workerd: true
