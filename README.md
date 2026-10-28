@@ -1,4 +1,4 @@
-# v-bpm-calc • [Demo](https://v-bpm-calc.vinayakkulkarni.dev)
+# v-bpm-calc • [Demo](https://v-bpm-calc.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc)
 
 > Tap tempo BPM calculator made with ❤️ and Vue.js
 
@@ -7,7 +7,7 @@ tempo in beats per minute, averaged over the last four gaps. Press **Play
 click** to hear a metronome at that tempo. **Esc** resets the count; a pause of
 two seconds starts a new one.
 
-Live demo: <https://v-bpm-calc.vinayakkulkarni.dev>
+**[Live demo](https://v-bpm-calc.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc)**
 
 ## Stack
 
@@ -38,6 +38,17 @@ pnpm build
 ```bash
 pnpm deploy         # nuxt build && wrangler deploy
 ```
+
+## More from the author
+
+- [v-tweakpane](https://v-tweakpane.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc) — Vue 3 wrapper for Tweakpane GUI panels
+- [v-clappr](https://v-clappr.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc) — Vue 3 wrapper for the Clappr media player
+- [v-rating](https://v-rating.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc) — star rating component for Vue
+- [v-spotlight](https://v-spotlight.vinayakkulkarni.dev?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc) — Vue 3 spotlight overlay for product tours
+- [nxui](https://nxui.geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc) — animated copy-paste UI components for Vue 3 and Nuxt
+- [shadscan-vue](https://shadscan-vue.geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc) — UI-fundamentals audit for shadcn-vue apps
+
+See every project at [vinayakkulkarni.dev/projects](https://vinayakkulkarni.dev/projects?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc) and [geoql.in](https://geoql.in?utm_source=github&utm_medium=readme&utm_campaign=v-bpm-calc).
 
 ## License
 
